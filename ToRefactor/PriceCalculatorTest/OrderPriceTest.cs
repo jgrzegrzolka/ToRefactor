@@ -19,7 +19,7 @@ namespace PriceCalculatorTest
         }
 
         [Test]
-        public void WhenCalculatinPrice_ShouldSumUpAllOrrders()
+        public void WhenCalculatingPrice_ShouldSumUpAllOrrders()
         {
             Product p1 = new Product("Product1", 50);
             Product p2 = new Product("Product1", 150);
@@ -33,7 +33,7 @@ namespace PriceCalculatorTest
         }
 
         [Test]
-        public void WhenCalculatinPriceForNotRegisteredUser_PriceShouldHaveNoDiscount()
+        public void WhenCalculatingPriceForNotRegisteredUser_PriceShouldHaveNoDiscount()
         {
             Product p1 = new Product("Product1", 50);
             Order o = new Order();
@@ -43,7 +43,7 @@ namespace PriceCalculatorTest
         }
 
         [Test]
-        public void WhenCalculatinPriceForAccountYoungerThan5Yeart_PriceShouldHaveNoDiscount()
+        public void WhenCalculatingPriceForAccountYoungerThan5Yeart_PriceShouldHaveNoDiscount()
         {
             Product p1 = new Product("Product1", 50);
 
@@ -54,7 +54,7 @@ namespace PriceCalculatorTest
         }
 
         [Test]
-        public void WhenCalculatinPriceForAccountWithExacly5Yeart_PriceShouldHaveNoDiscount()
+        public void WhenCalculatingPriceForAccountWithExacly5Yeart_PriceShouldHaveNoDiscount()
         {
             Product p1 = new Product("Product1", 50);
 
@@ -65,7 +65,7 @@ namespace PriceCalculatorTest
         }
 
         [Test]
-        public void WhenCalculatinPriceForAccountOlderThan5Yeart_PriceShouldHave10PercentDiscount()
+        public void WhenCalculatingPriceForAccountOlderThan5Yeart_PriceShouldHave10PercentDiscount()
         {
             Product p1 = new Product("Product1", 50);
 
