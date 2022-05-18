@@ -12,9 +12,9 @@ class Program
         o.Add(p1);
         o.Add(p2);
 
-        Console.WriteLine("Price for not registered: " + o.Calculate("notRegisteredOrder", 0));
-        Console.WriteLine("Price with 1 year registrarion: " + o.Calculate("registeredOrder", 1));
-        Console.WriteLine("Price with 5 year registrarion: " + o.Calculate("registeredOrder", 5));
-        Console.WriteLine("Price with 10 year registrarion: " + o.Calculate("registeredOrder", 10));
+        Console.WriteLine("Price for not registered: " + o.PriceWithDiscount(0));
+        Console.WriteLine("Price with 1 year registrarion: " + o.PriceWithDiscount(1));
+        Console.WriteLine("Price with 5 year registrarion: " + o.PriceWithDiscount(5));
+        Console.WriteLine("Price with 10 year registrarion: " + o.PriceWithDiscount(10));
     }
 }

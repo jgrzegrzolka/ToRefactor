@@ -15,21 +15,21 @@ namespace PriceCalculatorTest
         {
             Order o = new Order();
 
-            Assert.AreEqual(o.Calculate("notRegisteredOrder", 0), 0);
+            Assert.AreEqual(o.Price, 0);
         }
 
         [Test]
-        public void WhenCalculatinPrice_ShouldSumUpAllOrrders()
+        public void WhenCalculatinPrice_ShouldSumUpAllOrders()
         {
             Product p1 = new Product("Product1", 50);
-            Product p2 = new Product("Product1", 150);
+            Product p2 = new Product("Product2", 150);
             
             Order o = new Order();
             
-            o.Add(p1);
-            o.Add(p2);
+            o.AddProduct(p1);
+            o.AddProduct(p2);
 
-            Assert.AreEqual(o.Calculate("notRegisteredOrder", 0), 200);
+            Assert.AreEqual(o.Price, 200);
         }
 
         [Test]
@@ -37,9 +37,9 @@ namespace PriceCalculatorTest
         {
             Product p1 = new Product("Product1", 50);
             Order o = new Order();
-            o.Add(p1);
+            o.AddProduct(p1);
 
-            Assert.AreEqual(o.Calculate("notRegisteredOrder", 0), 50);
+            Assert.AreEqual(o.PriceAfterDiscount(0), 50);
         }
 
         [Test]
@@ -48,9 +48,9 @@ namespace PriceCalculatorTest
             Product p1 = new Product("Product1", 50);
 
             Order o = new Order();
-            o.Add(p1);
+            o.AddProduct(p1);
 
-            Assert.AreEqual(o.Calculate("registeredOrder", 4), 50);
+            Assert.AreEqual(o.PriceAfterDiscount(4), 50);
         }
 
         [Test]
@@ -59,9 +59,9 @@ namespace PriceCalculatorTest
             Product p1 = new Product("Product1", 50);
 
             Order o = new Order();
-            o.Add(p1);
+            o.AddProduct(p1);
 
-            Assert.AreEqual(o.Calculate("registeredOrder", 5), 50);
+            Assert.AreEqual(o.PriceAfterDiscount(5), 50);
         }
 
         [Test]
@@ -70,9 +70,9 @@ namespace PriceCalculatorTest
             Product p1 = new Product("Product1", 50);
 
             Order o = new Order();
-            o.Add(p1);
+            o.AddProduct(p1);
 
-            Assert.AreEqual(o.Calculate("registeredOrder", 6), 40);
+            Assert.AreEqual(o.PriceAfterDiscount(10), 40);
         }
     }
 }
