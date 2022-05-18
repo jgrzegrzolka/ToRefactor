@@ -1,0 +1,146 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Projects\\Tmp\\ToRefactor\\ToRefactor\\PriceCalculatorTest\\PriceCalculatorTest.csproj": {}
+  },
+  "projects": {
+    "C:\\Projects\\Tmp\\ToRefactor\\ToRefactor\\PriceCalculatorTest\\PriceCalculatorTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Tmp\\ToRefactor\\ToRefactor\\PriceCalculatorTest\\PriceCalculatorTest.csproj",
+        "projectName": "PriceCalculatorTest",
+        "projectPath": "C:\\Projects\\Tmp\\ToRefactor\\ToRefactor\\PriceCalculatorTest\\PriceCalculatorTest.csproj",
+        "packagesPath": "C:\\Users\\jrz\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Tmp\\ToRefactor\\ToRefactor\\PriceCalculatorTest\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://wattswatertechnologies.pkgs.visualstudio.com/1d108a35-6b96-46d9-995b-2c5b9b266061/_packaging/WattsBackend/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Projects\\Tmp\\ToRefactor\\ToRefactor\\PriceCalculator\\PriceCalculator.csproj": {
+                "projectPath": "C:\\Projects\\Tmp\\ToRefactor\\ToRefactor\\PriceCalculator\\PriceCalculator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.2, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Projects\\Tmp\\ToRefactor\\ToRefactor\\PriceCalculator\\PriceCalculator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projects\\Tmp\\ToRefactor\\ToRefactor\\PriceCalculator\\PriceCalculator.csproj",
+        "projectName": "PriceCalculator",
+        "projectPath": "C:\\Projects\\Tmp\\ToRefactor\\ToRefactor\\PriceCalculator\\PriceCalculator.csproj",
+        "packagesPath": "C:\\Users\\jrz\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\Tmp\\ToRefactor\\ToRefactor\\PriceCalculator\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\jrz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://wattswatertechnologies.pkgs.visualstudio.com/1d108a35-6b96-46d9-995b-2c5b9b266061/_packaging/WattsBackend/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.105\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
