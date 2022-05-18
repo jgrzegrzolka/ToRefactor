@@ -13,12 +13,7 @@ namespace PriceCalculatorTest
         [Test]
         public void WhenCreateEmptyOrder_PriceShouldBeZero()
         {
-            Product p1 = new Product("Product1", 50);
-            Product p2 = new Product("Product2", 50);
-
             Order o = new Order();
-            o.Add(p1);
-            o.Add(p2);
 
             Assert.AreEqual(o.Calculate("notRegisteredOrder", 0), 0);
         }
