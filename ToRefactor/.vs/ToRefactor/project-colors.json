@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "aa4fd2b7-e091-4369-92bc-0d1b29efa56d": {
+      "ProjectGuid": "aa4fd2b7-e091-4369-92bc-0d1b29efa56d",
+      "DisplayName": "PriceCalculator",
+      "ColorIndex": 0
+    },
+    "a5492fab-2031-4bd1-9f48-f4994bb12307": {
+      "ProjectGuid": "a5492fab-2031-4bd1-9f48-f4994bb12307",
+      "DisplayName": "PriceCalculatorTest",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

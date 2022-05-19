@@ -4,7 +4,6 @@ C:\Projects\Tmp\ToRefactor\ToRefactor\PriceCalculator\bin\Debug\net6.0\PriceCalc
 C:\Projects\Tmp\ToRefactor\ToRefactor\PriceCalculator\bin\Debug\net6.0\PriceCalculator.dll
 C:\Projects\Tmp\ToRefactor\ToRefactor\PriceCalculator\bin\Debug\net6.0\ref\PriceCalculator.dll
 C:\Projects\Tmp\ToRefactor\ToRefactor\PriceCalculator\bin\Debug\net6.0\PriceCalculator.pdb
-C:\Projects\Tmp\ToRefactor\ToRefactor\PriceCalculator\obj\Debug\net6.0\PriceCalculator.csproj.AssemblyReference.cache
 C:\Projects\Tmp\ToRefactor\ToRefactor\PriceCalculator\obj\Debug\net6.0\PriceCalculator.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projects\Tmp\ToRefactor\ToRefactor\PriceCalculator\obj\Debug\net6.0\PriceCalculator.AssemblyInfoInputs.cache
 C:\Projects\Tmp\ToRefactor\ToRefactor\PriceCalculator\obj\Debug\net6.0\PriceCalculator.AssemblyInfo.cs

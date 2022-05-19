@@ -9,12 +9,12 @@ class Program
         Product p2 = new Product("Product2", 50);
 
         Order o = new Order();
-        o.Add(p1);
-        o.Add(p2);
+        o.AddProduct(p1);
+        o.AddProduct(p2);
 
-        Console.WriteLine("Price for not registered: " + o.PriceWithDiscount(0));
-        Console.WriteLine("Price with 1 year registrarion: " + o.PriceWithDiscount(1));
-        Console.WriteLine("Price with 5 year registrarion: " + o.PriceWithDiscount(5));
-        Console.WriteLine("Price with 10 year registrarion: " + o.PriceWithDiscount(10));
+        Console.WriteLine("Price for not registered: " + o.PriceAfterDiscount(0));
+        Console.WriteLine("Price with 1 year registrarion: " + o.PriceAfterDiscount(1));
+        Console.WriteLine("Price with 5 year registrarion: " + o.PriceAfterDiscount(5));
+        Console.WriteLine("Price with 10 year registrarion: " + o.PriceAfterDiscount(10));
     }
 }
