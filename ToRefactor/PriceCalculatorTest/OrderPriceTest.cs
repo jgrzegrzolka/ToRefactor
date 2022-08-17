@@ -1,4 +1,4 @@
-using Domain;
+using PriceCalculator.Domain;
 using NUnit.Framework;
 
 namespace PriceCalculatorTest
@@ -15,7 +15,7 @@ namespace PriceCalculatorTest
         {
             Order o = new Order();
 
-            Assert.AreEqual(o.Calculate("notRegisteredOrder", 0), 0);
+            Assert.AreEqual(o.GetPriceAfterDiscount(0), 0);
         }
 
         [Test]
@@ -26,10 +26,10 @@ namespace PriceCalculatorTest
             
             Order o = new Order();
             
-            o.Add(p1);
-            o.Add(p2);
+            o.AddProduct(p1);
+            o.AddProduct(p2);
 
-            Assert.AreEqual(o.Calculate("notRegisteredOrder", 0), 200);
+            Assert.AreEqual(o.GetPriceAfterDiscount(0), 200);
         }
 
         [Test]
@@ -37,9 +37,9 @@ namespace PriceCalculatorTest
         {
             Product p1 = new Product("Product1", 50);
             Order o = new Order();
-            o.Add(p1);
+            o.AddProduct(p1);
 
-            Assert.AreEqual(o.Calculate("notRegisteredOrder", 0), 50);
+            Assert.AreEqual(o.GetPriceAfterDiscount(0), 50);
         }
 
         [Test]
@@ -48,9 +48,9 @@ namespace PriceCalculatorTest
             Product p1 = new Product("Product1", 50);
 
             Order o = new Order();
-            o.Add(p1);
+            o.AddProduct(p1);
 
-            Assert.AreEqual(o.Calculate("registeredOrder", 4), 50);
+            Assert.AreEqual(o.GetPriceAfterDiscount(4), 50);
         }
 
         [Test]
@@ -59,9 +59,9 @@ namespace PriceCalculatorTest
             Product p1 = new Product("Product1", 50);
 
             Order o = new Order();
-            o.Add(p1);
+            o.AddProduct(p1);
 
-            Assert.AreEqual(o.Calculate("registeredOrder", 5), 50);
+            Assert.AreEqual(o.GetPriceAfterDiscount(5), 50);
         }
 
         [Test]
@@ -70,9 +70,9 @@ namespace PriceCalculatorTest
             Product p1 = new Product("Product1", 50);
 
             Order o = new Order();
-            o.Add(p1);
+            o.AddProduct(p1);
 
-            Assert.AreEqual(o.Calculate("registeredOrder", 6), 40);
+            Assert.AreEqual(o.GetPriceAfterDiscount(6), 40);
         }
     }
 }

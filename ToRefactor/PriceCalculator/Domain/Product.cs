@@ -1,8 +1,7 @@
-﻿
-namespace Domain
+﻿namespace PriceCalculator.Domain
 {
     public class Product
-    { 
+    {
         public Product(string name, decimal price)
         {
             Name = name;

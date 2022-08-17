@@ -1,4 +1,4 @@
-﻿using Domain;
+﻿using PriceCalculator.Domain;
 
 class Program
 {
@@ -9,12 +9,12 @@ class Program
         Product p2 = new Product("Product2", 50);
 
         Order o = new Order();
-        o.Add(p1);
-        o.Add(p2);
+        o.AddProduct(p1);
+        o.AddProduct(p2);
 
-        Console.WriteLine("Price for not registered: " + o.Calculate("notRegisteredOrder", 0));
-        Console.WriteLine("Price with 1 year registration: " + o.Calculate("registeredOrder", 1));
-        Console.WriteLine("Price with 5 year registration: " + o.Calculate("registeredOrder", 5));
-        Console.WriteLine("Price with 10 year registration: " + o.Calculate("registeredOrder", 10));
+        Console.WriteLine("Price for not registered: " + o.GetPriceAfterDiscount(0));
+        Console.WriteLine("Price with 1 year registration: " + o.GetPriceAfterDiscount(1));
+        Console.WriteLine("Price with 5 year registration: " + o.GetPriceAfterDiscount(5));
+        Console.WriteLine("Price with 10 year registration: " + o.GetPriceAfterDiscount(10));
     }
 }
